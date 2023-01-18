@@ -19,6 +19,8 @@ Differences between Pact Open Source and PactFlow [Pactflow](https://pactflow.io
 
 Difference between cdct and bdct [ContactTesting](https://pactflow.io/difference-between-consumer-driven-contract-testing-and-bi-directional-contract-testing/).
 
+CDCT vs BDCT tradeoffs [Tradeoffs] (https://docs.pactflow.io/docs/bi-directional-contract-testing).
+
 Pact CLI tools [PactCLI](https://docs.pact.io/docker)
 
 Pact Platform [PactPlatform](https://pactflow.io/security/)
