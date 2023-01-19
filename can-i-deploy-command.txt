@@ -1,0 +1,1 @@
+docker run --rm -v ${PWD}:${PWD} -e PACT_BROKER_BASE_URL -e PACT_BROKER_TOKEN pactfoundation/pact-cli:latest broker can-i-deploy --pacticipant pactflow-example-bi-directional-consumer-wiremock --version dbc74c64ebd28ddf5918e4b32874b7a94a8d2611  --retry-while-unknown 0  --retry-interval 10
