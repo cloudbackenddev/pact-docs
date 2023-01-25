@@ -2,3 +2,8 @@ docker run --rm -v ${PWD}:${PWD} -e PACT_BROKER_BASE_URL -e PACT_BROKER_TOKEN pa
 
 
 https://gitlab.sngular.com/sngulartech/bi-direccional_contract_testing/-/blob/main/scripts/publish-provider.sh
+
+https://docs.pact.io/implementation_guides/cli
+https://docs.pact.io/provider/using_provider_states_effectively
+https://docs.pactflow.io/docs/bi-directional-contract-testing/contracts/oas/
+https://docs.pact.io/pact_nirvana
