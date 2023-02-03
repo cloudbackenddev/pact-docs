@@ -10,3 +10,4 @@ https://docs.pact.io/pact_nirvana
 https://docs.pact.io/implementation_guides/jvm/provider/maven
 
 curl -k -H 'Accept:application/hal+json'  https://bdtest.pactflow.io/environments
+curl -LO https://github.com/pact-foundation/pact-ruby-standalone/releases/download/v1.89.00/pact-1.89.00-linux-x86_64.tar.gz
