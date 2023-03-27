@@ -3,3 +3,14 @@
       <artifactId>log4j-layout-template-json</artifactId>
 </dependency>
     
+
+String traceId =System.getenv().getOrDefault("_X_AMZN_TRACE_ID","NA").replace("Root=","");
+            String correlationId =traceId.split(";")[0];
+            MDC.put("traceId",traceId.replace("Root=",""));
+            MDC.put("correlationId",correlationId);
+            MDC.put("requestId",context.getAwsRequestId());
+            MDC.put("compositeUserId", "a@b@brand");
+
+            logger.info("Incoming request to authorize token");
+            logger.info("Authorize process completed");
+            MDC.clear();
