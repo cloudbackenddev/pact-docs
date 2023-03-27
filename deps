@@ -14,3 +14,15 @@ String traceId =System.getenv().getOrDefault("_X_AMZN_TRACE_ID","NA").replace("R
             logger.info("Incoming request to authorize token");
             logger.info("Authorize process completed");
             MDC.clear();
+
+<dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.apache.logging.log4j</groupId>
+        <artifactId>log4j-bom</artifactId>
+        <version>2.19.0</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
