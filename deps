@@ -40,3 +40,5 @@ String traceId =System.getenv().getOrDefault("_X_AMZN_TRACE_ID","NA").replace("R
 }
 
 https://elvisciotti.medium.com/logback-non-access-spring-logs-with-custom-json-format-and-mdc-1c6f1fbf28c4
+
+helm upgrade istiod manifests/charts/istio-control/istio-discovery --namespace istio-system --values values_backup.yaml
