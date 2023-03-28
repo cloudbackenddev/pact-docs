@@ -42,3 +42,14 @@ String traceId =System.getenv().getOrDefault("_X_AMZN_TRACE_ID","NA").replace("R
 https://elvisciotti.medium.com/logback-non-access-spring-logs-with-custom-json-format-and-mdc-1c6f1fbf28c4
 
 helm upgrade istiod manifests/charts/istio-control/istio-discovery --namespace istio-system --values values_backup.yaml
+
+
+pilot:
+  image: ${local.ecr_registry}/docker.io/istio/pilot:1.14.1
+global:
+  proxy:
+    image: ${local.ecr_registry}/docker.io/istio/proxyv2:1.14.1
+    logLevel: debug
+    privileged: true
+  proxy_init:
+    image: ${local.ecr_registry}/docker.io/istio/proxyv2:1.14.1
