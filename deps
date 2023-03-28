@@ -39,3 +39,4 @@ String traceId =System.getenv().getOrDefault("_X_AMZN_TRACE_ID","NA").replace("R
     "message": "Incoming request to authorize token"
 }
 
+https://elvisciotti.medium.com/logback-non-access-spring-logs-with-custom-json-format-and-mdc-1c6f1fbf28c4
