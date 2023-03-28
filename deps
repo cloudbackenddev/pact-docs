@@ -26,3 +26,16 @@ String traceId =System.getenv().getOrDefault("_X_AMZN_TRACE_ID","NA").replace("R
       </dependency>
     </dependencies>
   </dependencyManagement>
+  
+  {
+    "timestamp": "2023-03-27T08:23:35.078Z",
+    "level": "INFO",
+    "contextMap": {
+        "compositeUserId": "a@b@brand",
+        "correlationId": "1-64215281-4e35168d5b8cb2f773061586",
+        "requestId": "4e8b04c4-2298-4fcb-a788-23f2054ad3ff",
+        "traceId": "1-64215281-4e35168d5b8cb2f773061586;Parent=9b9383083d7a681b;Sampled=1"
+    },
+    "message": "Incoming request to authorize token"
+}
+
