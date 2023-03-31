@@ -43,13 +43,5 @@ https://elvisciotti.medium.com/logback-non-access-spring-logs-with-custom-json-f
 
 helm upgrade istiod manifests/charts/istio-control/istio-discovery --namespace istio-system --values values_backup.yaml
 
-
-pilot:
-  image: ${local.ecr_registry}/docker.io/istio/pilot:1.14.1
-global:
-  proxy:
-    image: ${local.ecr_registry}/docker.io/istio/proxyv2:1.14.1
-    logLevel: debug
-    privileged: true
-  proxy_init:
-    image: ${local.ecr_registry}/docker.io/istio/proxyv2:1.14.1
+    
+{"bytes_rcvd":0,"upstream_host":"10.244.0.6:8888","user_agent":"curl/7.81.0","host":"172.18.255.200","protocol":"HTTP/1.1","remote_address":"10.244.0.8:34858","request":{"request_method":"GET","request_id":"3e2a7759-3bfd-4284-a80e-8f04ee4eb19e","request_xff":"10.244.0.1","request_time":510,"request_path":"/hello"},"compositeUserId":"123456","start_time":"2023-03-31T07:54:51.230Z","source_host":"java-app-default-5f878c5f4f-tqxst","response":{"response_time":504,"response_bytes_sent":25,"response_flags":"-","response_upstream_time":"502","response_code":200,"response_code_details":"via_upstream"},"correlationId":"654321"}    
